@@ -3,9 +3,13 @@ Collectd plugin reading Camel route statistics exposed over JMX
 
 Searches JMX server for Camel routes MBeans and exposes their statistics. Uses compination of Camel context id and route id to create metric name.
 The generated metrix follow pattern of:
+```
 CamelPlugin-<context_name>.<route_if>.gauge-<attribute_name>
+```
 eg.
+```
 CamelPlugin-testContext.timerRoute.gauge-MeanProcessingTime
+```
 
 Configuration
 =============
